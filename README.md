@@ -42,7 +42,7 @@ EcomentesHub/
 2. Acesse a pasta do projeto:
 
    ```bash
-   cd upx3/EcomentesHub
+   cd upx3
    ```
 
 3. Abra qualquer página HTML no navegador, por exemplo:
