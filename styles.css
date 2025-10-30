@@ -1,0 +1,406 @@
+
+/* ===== Ecomentes Hub — melhorias rápidas =====
+   - Variáveis CSS para facilitar temas
+   - Ajustes de botão, foco e acessibilidade
+   - Melhor suporte mobile para footer e header
+*/
+:root{
+  --green-500: #4caf50;
+  --green-700: #2e7d32;
+  --accent: #388e3c;
+  --bg: #f4f9f4;
+  --text: #2f4f2f;
+  --card: #ffffff;
+  --muted: #555555;
+}
+
+  body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f9f4;
+      color: #2f4f2f;
+      padding-bottom: 100px;
+  }
+
+  header {
+      background: #4caf50;
+      color: white;
+      padding: 1em 2em;
+      position: sticky;
+      top: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+  }
+
+  header h1 {
+      margin: 0;
+      font-size: 1.8em;
+  }
+
+  nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+  }
+
+  nav ul li {
+      margin-left: 1.5em;
+  }
+
+  nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+  }
+
+  nav a:hover {
+      text-decoration: underline;
+  }
+
+  .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      border-radius:8px;
+  }
+
+  .menu-toggle span {
+      background: white;
+      height: 3px;
+      width: 25px;
+      margin: 4px 0;
+      border-radius: 2px;
+  }
+
+    @media(max-width: 768px) {
+        footer {
+                background: #2e7d32;
+                color: white;
+                text-align: center;
+                padding: 1.5em 1em;
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 25%;
+            }
+        nav ul {
+            flex-direction: column;
+            background: #4caf50;
+            position: absolute;
+            top: 70px;
+            right: 0;
+            width: 200px;
+            display: none;
+        }
+
+        nav ul.active {
+            display: flex;
+            border-radius: 8px;
+        }
+
+        nav ul li {
+            margin: 1em 0;
+            text-align: right;
+            margin-right: 1em;
+        }
+
+        .menu-toggle {
+            display: flex;
+        }
+
+        .hero {
+            min-height: 2vh;
+            cursor: default;
+        }
+
+        .hero-bg {
+            transform: none !important;
+        }
+    }
+
+  main {
+      padding: 2em;
+      max-width: 1000px;
+      margin: 0 auto;
+  }
+
+  section {
+      margin-bottom: 3em;
+  }
+
+.hero {
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 4em 2em;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 120%;
+    background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1470&q=80') no-repeat center/cover;
+    transition: transform 0.15s ease-out;
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 2em;
+    border-radius: 12px;
+    backdrop-filter: blur(3px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 1.2em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+  .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5em;
+  }
+
+  .product-card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      padding: 1em;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+  }
+
+  .product-card:hover {
+      transform: translateY(-5px);
+  }
+
+  .product-card img {
+      width: 100%;
+      border-radius: 6px;
+  }
+
+  .product-card h3 {
+      margin: 0.6em 0 0.2em 0;
+      color: #2e7d32;
+  }
+
+  .product-card p {
+      font-size: 0.9em;
+      color: #555;
+  }
+
+  .btn-buy {
+      display: inline-block;
+      margin-top: 1em;
+      background: #388e3c;
+      color: white;
+      padding: 0.5em 1.2em;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 600;
+  }
+
+  .btn-buy:hover {
+      cursor:pointer;
+      background: #2e7d32;
+  }
+
+  /* Form */
+  form {
+        background: white;
+        padding: 2em;
+        border-radius: 8px;
+        max-width: 500px;
+        margin: 0 auto;
+  }
+
+  form label {
+      display: block;
+      margin-bottom: 0.5em;
+      font-weight: 600;
+  }
+
+  form input,
+  form textarea {
+      width: 100%;
+      padding: 0.7em;
+      margin-bottom: 1em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1em;
+  }
+
+  form button {
+      background: #4caf50;
+      color: white;
+      font-weight: 700;
+      padding: 0.7em 1.5em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+
+  form button:hover {
+      background: #388e3c;
+  }
+
+  footer {
+      background: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 1.5em 1em;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 8%;
+  }
+
+  footer a {
+      color: #a5d6a7;
+      margin: 0 0.5em;
+      text-decoration: none;
+  }
+
+  footer a:hover {
+      text-decoration: underline;
+  }
+  #contact{
+      margin-bottom: 5em;
+  }
+
+  /* Interactive Elements Styles */
+ .calc-section,
+ .quiz-section,
+ .testimonials-section,
+ .events-section,
+ .map-section,
+ .contact-section,
+ .about-section,
+ .gamify-section {
+     background: white;
+     border-radius: 8px;
+     padding: 1.5em;
+     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+ }
+
+  /* Calculator styles */
+  .calc-section input[type="number"] {
+      width: 80px;
+      margin-right: 0.5em;
+  }
+
+  .calc-result {
+      margin-top: 1em;
+      font-weight: 700;
+      color: #2e7d32;
+  }
+
+  /* Quiz styles */
+  .quiz-question {
+      font-weight: 700;
+      margin-bottom: 1em;
+  }
+
+  .quiz-options label {
+      display: block;
+      margin-bottom: 0.5em;
+      cursor: pointer;
+  }
+
+  .quiz-result {
+      margin-top: 1em;
+      font-weight: 700;
+  }
+
+  /* Testimonials */
+  .testimonial-item {
+      border: 1px solid #ccc;
+      padding: 1em;
+      border-radius: 6px;
+      margin-bottom: 1em;
+      cursor: pointer;
+      background: #f7fdf7;
+      transition: background-color 0.3s ease;
+  }
+
+  .testimonial-item:hover,
+  .testimonial-item.active {
+      background: #dcedc8;
+  }
+
+  .testimonial-content {
+      display: none;
+      margin-top: 0.5em;
+      font-style: italic;
+  }
+
+  /* Events */
+  .event {
+      border-bottom: 1px solid #ccc;
+      padding: 0.8em 0;
+  }
+
+  .event:last-child {
+      border: none;
+  }
+
+  .event-date {
+      font-weight: 700;
+      color: #2e7d32;
+  }
+
+  /* Map */
+  .map-container {
+      text-align: center;
+      margin-top: 1em;
+  }
+
+  .map-img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Gamify */
+  .gamify-section label {
+      font-weight: 600;
+  }
+
+  .gamify-section input[type=range] {
+      width: 100%;
+      margin: 0.5em 0 1em 0;
+  }
+
+  .gamify-score {
+      font-size: 1.3em;
+      font-weight: 700;
+      color: #388e3c;
+      margin-top: 0.5em;
+  }
+
+button:focus, a:focus, input:focus, select:focus { outline: 3px solid rgba(76,175,80,0.25); outline-offset: 2px; }
