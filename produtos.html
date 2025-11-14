@@ -33,7 +33,7 @@
       <span></span>
     </div>
     <ul id="navbar">
-      <li><a href="ecomenteshub.html">Início</a></li>
+      <li><a href="index.html">Início</a></li>
       <li><a href="produtos.html">Produtos</a></li>
       <li><a href="calculadora.html">Calculadora</a></li>
       <li><a href="quiz.html">Quiz</a></li>
@@ -41,7 +41,7 @@
       <li><a href="eventos.html">Eventos</a></li>
       <li><a href="mapa.html">Mapa</a></li>
       <li><a href="consumo.html">Consumo</a></li>
-     
+
     </ul>
   </nav>
 </header>
@@ -142,17 +142,17 @@
     quizResult.textContent = "";
     questionText.textContent = quizData[currentQuestion].question;
     quizOptions.innerHTML = '';
-    
+
     quizData[currentQuestion].options.forEach(option => {
         const id = 'option-' + option;
         const label = document.createElement('label');
-        
+
         // CORREÇÃO: colocar o HTML do input como string
         label.innerHTML = `
             <input type="radio" name="quiz" value="${option}" id="${id}">
             ${option}
         `;
-        
+
         quizOptions.appendChild(label);
     });
 }

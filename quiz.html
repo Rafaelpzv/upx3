@@ -1,245 +1,312 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Ecomentes Hub - Energia Renovável</title>
-  <meta name="description" content="Ecomentes Hub — soluções e conteúdo sobre energia renovável">
-<link rel="icon" href="favicon.ico" type="image/png">
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<header>
-      <h1>
-        Ecomentes Hub
-        <svg width="38px" height="38px" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg"
-          fill="#ffffff">
-          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-          <g id="SVGRepo_iconCarrier">
-            <path
-              d="M859.29 140.28c-5.31-15.34-79.28-7-116 9.42s-163.34 116.58-188.52 172-17.35 64.14-30 84.29-17.1 33.3-22.12 27.66-2.24-16.66 7.83-36.5 28-55 32.21-78.58-10.15-111.32-11.56-147.31-15.46-105.8-33.6-106.37-69.25 69.39-75.15 122.11-17.46 139.43 4.21 195.12 34.11 42.14 41.25 66.88-14 82.5-40.95 117.38-37 46.84-48.27 43.18-17-29-9.06-46.76 26.22-37.12 26.48-61.55-9.33-113.22-15.22-136.06S360 291.87 358 272.34s2.85-67.45-10.61-72.41c-23.69-7.57-57.39 50.77-76.1 132.25s6.86 148 15.18 161.37 27.85 46.23 41.65 61.22 25.81 20.89 29.44 46.57 5.44 38.52-9.79 74.66-66.06 149.34-83 166.45c-4.19-42.4 6.47-30.15 7.41-63.57s-3.05-43.81 3-74.05-21.14-139.41-46-168.41c-12.13-15.05-8-53.59-15.32-54.33s-9.44-2.44-13.92 22.33-43 102-34.27 169.44 12.82 73.72 21.86 87.69 21.56 23.3 31.14 50.25 10.82 40.5 20.73 48.44-16.17 92.81-16.17 92.81l28.17 6s24.82-125.4 50.13-137 37.28 17.63 83.27 17.95 103.84-15.91 129.29-26.22 41.21-16.06 66.32-36.4 56.41-67.58 74.87-89.77 31.63-25.58 25.85-33.46-33.3-3.41-61-1.88-114.7 6.52-178.61 29.73-85.12 71.8-96.12 84.38-14.63 27.62-24.49 21.32-4.73-14.71 1.28-23.38 78.23-177 162.4-192.17c40.67-5.8 37.86 24.72 92.36 26s138.9-18.76 202.48-98.5c47.14-59.19 61-113.91 66.63-121s-28.71-13.21-53.39-6.47-35 16.15-58.92 19.32S607 402.11 563.34 443s-47.73 91-66.93 103.09-41.9 25-44.33 17.05 42.39-100.88 78.53-141.68c11.65-13.69 29-5.41 67.11-24.61s144-102.73 174.92-136.36 32.09-58.69 57.77-79.74 30.84-34.75 28.88-40.47z"
-              fill="#ffffff"></path>
-            <path
-              d="M207.57 519c-11.4 41.54-7.11 122.14 1.1 161.26s31.48 151.17 31.48 151.17-17-118.18-24.28-165.4-8.3-147.03-8.3-147.03zM322.07 240.56C306.49 289.51 307.36 371 310.53 395s25.7 143.29 39 158.6c-17.27-74.25-28.49-121-33.21-164.41-4.65-43.1-0.32-77.72 5.75-148.63zM641.9 671.54c-33.45 39-103.26 81.1-125.27 91S381.22 816 361.2 812.71c72.25-24.34 117.88-39.36 157.31-58.18 39.09-18.66 66.27-40.53 123.39-82.99zM486 95.61c-10.09 27.71-43.91 204.72-21.09 280.17C450.33 288.82 486 95.61 486 95.61zM792.13 181.21c-39.45 21.42-213.55 167.5-225.74 185.64 33.42-22.3 225.74-185.64 225.74-185.64zM808.82 411.65c-18.6 24.78-170.91 157-273.46 145 159.64-32.19 273.46-145 273.46-145z"
-              fill="#4caf50"></path>
-          </g>
-        </svg>
-      </h1>
-  <nav aria-label="Menu principal" role="navigation">
-    <div class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="navbar">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-    <ul id="navbar">
-      <li><a href="ecomenteshub.html">Início</a></li>
-      <li><a href="produtos.html">Produtos</a></li>
-      <li><a href="calculadora.html">Calculadora</a></li>
-      <li><a href="quiz.html">Quiz</a></li>
-      <li><a href="depoimento.html">Depoimentos</a></li>
-      <li><a href="eventos.html">Eventos</a></li>
-      <li><a href="mapa.html">Mapa</a></li>
-      <li><a href="consumo.html">Consumo</a></li>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Ecomentes Hub - Energia Renovável</title>
+        <meta
+            name="description"
+            content="Ecomentes Hub — soluções e conteúdo sobre energia renovável"
+        />
+        <link rel="icon" href="favicon.ico" type="image/png" />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header>
+            <h1>
+                Ecomentes Hub
+                <svg
+                    width="38px"
+                    height="38px"
+                    viewBox="0 0 1024 1024"
+                    class="icon"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#ffffff"
+                >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M859.29 140.28c-5.31-15.34-79.28-7-116 9.42s-163.34 116.58-188.52 172-17.35 64.14-30 84.29-17.1 33.3-22.12 27.66-2.24-16.66 7.83-36.5 28-55 32.21-78.58-10.15-111.32-11.56-147.31-15.46-105.8-33.6-106.37-69.25 69.39-75.15 122.11-17.46 139.43 4.21 195.12 34.11 42.14 41.25 66.88-14 82.5-40.95 117.38-37 46.84-48.27 43.18-17-29-9.06-46.76 26.22-37.12 26.48-61.55-9.33-113.22-15.22-136.06S360 291.87 358 272.34s2.85-67.45-10.61-72.41c-23.69-7.57-57.39 50.77-76.1 132.25s6.86 148 15.18 161.37 27.85 46.23 41.65 61.22 25.81 20.89 29.44 46.57 5.44 38.52-9.79 74.66-66.06 149.34-83 166.45c-4.19-42.4 6.47-30.15 7.41-63.57s-3.05-43.81 3-74.05-21.14-139.41-46-168.41c-12.13-15.05-8-53.59-15.32-54.33s-9.44-2.44-13.92 22.33-43 102-34.27 169.44 12.82 73.72 21.86 87.69 21.56 23.3 31.14 50.25 10.82 40.5 20.73 48.44-16.17 92.81-16.17 92.81l28.17 6s24.82-125.4 50.13-137 37.28 17.63 83.27 17.95 103.84-15.91 129.29-26.22 41.21-16.06 66.32-36.4 56.41-67.58 74.87-89.77 31.63-25.58 25.85-33.46-33.3-3.41-61-1.88-114.7 6.52-178.61 29.73-85.12 71.8-96.12 84.38-14.63 27.62-24.49 21.32-4.73-14.71 1.28-23.38 78.23-177 162.4-192.17c40.67-5.8 37.86 24.72 92.36 26s138.9-18.76 202.48-98.5c47.14-59.19 61-113.91 66.63-121s-28.71-13.21-53.39-6.47-35 16.15-58.92 19.32S607 402.11 563.34 443s-47.73 91-66.93 103.09-41.9 25-44.33 17.05 42.39-100.88 78.53-141.68c11.65-13.69 29-5.41 67.11-24.61s144-102.73 174.92-136.36 32.09-58.69 57.77-79.74 30.84-34.75 28.88-40.47z"
+                            fill="#ffffff"
+                        ></path>
+                        <path
+                            d="M207.57 519c-11.4 41.54-7.11 122.14 1.1 161.26s31.48 151.17 31.48 151.17-17-118.18-24.28-165.4-8.3-147.03-8.3-147.03zM322.07 240.56C306.49 289.51 307.36 371 310.53 395s25.7 143.29 39 158.6c-17.27-74.25-28.49-121-33.21-164.41-4.65-43.1-0.32-77.72 5.75-148.63zM641.9 671.54c-33.45 39-103.26 81.1-125.27 91S381.22 816 361.2 812.71c72.25-24.34 117.88-39.36 157.31-58.18 39.09-18.66 66.27-40.53 123.39-82.99zM486 95.61c-10.09 27.71-43.91 204.72-21.09 280.17C450.33 288.82 486 95.61 486 95.61zM792.13 181.21c-39.45 21.42-213.55 167.5-225.74 185.64 33.42-22.3 225.74-185.64 225.74-185.64zM808.82 411.65c-18.6 24.78-170.91 157-273.46 145 159.64-32.19 273.46-145 273.46-145z"
+                            fill="#4caf50"
+                        ></path>
+                    </g>
+                </svg>
+            </h1>
+            <nav aria-label="Menu principal" role="navigation">
+                <div
+                    class="menu-toggle"
+                    id="menu-toggle"
+                    aria-expanded="false"
+                    aria-controls="navbar"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul id="navbar">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="calculadora.html">Calculadora</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="depoimento.html">Depoimentos</a></li>
+                    <li><a href="eventos.html">Eventos</a></li>
+                    <li><a href="mapa.html">Mapa</a></li>
+                    <li><a href="consumo.html">Consumo</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!-- Quiz Educativo -->
+            <section class="quiz-section" id="quiz">
+                <h2>Quiz Rápido sobre Energia Renovável</h2>
+                <div id="quiz-content">
+                    <p class="quiz-question" id="question-text"></p>
+                    <div class="quiz-options" id="quiz-options"></div>
+                    <a class="btn-buy" id="quiz-check">Responder</a>
+                    <div class="quiz-result" id="quiz-result"></div>
+                </div>
+            </section>
 
-    </ul>
-  </nav>
-</header>
-<main>
-  
-<!-- Quiz Educativo -->
-  <section class="quiz-section" id="quiz">
-    <h2>Quiz Rápido sobre Energia Renovável</h2>
-    <div id="quiz-content">
-      <p class="quiz-question" id="question-text"></p>
-      <div class="quiz-options" id="quiz-options"></div>
-      <a class="btn-buy" id="quiz-check">Responder</a>
-      <div class="quiz-result" id="quiz-result"></div>
-    </div>
-  </section>
+            <section class="contact-section" id="contact">
+                <h2>Contato</h2>
+                <form id="contact-form">
+                    <label for="name">Nome</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Seu nome"
+                        required
+                    />
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Seu email"
+                        required
+                    />
+                    <label for="message">Mensagem</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="4"
+                        placeholder="Escreva sua mensagem"
+                        required
+                    ></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </main>
 
+        <footer>
+            <p>© 2025 Ecomentes Hub Energia Renovável</p>
+            <p>
+                <a href="#">Facebook</a> | <a href="#">Instagram</a> |
+                <a href="#">LinkedIn</a>
+            </p>
+        </footer>
 
-  <section class="contact-section" id="contact">
-    <h2>Contato</h2>
-    <form id="contact-form">
-      <label for="name">Nome</label>
-      <input type="text" id="name" name="name" placeholder="Seu nome" required />
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" placeholder="Seu email" required />
-      <label for="message">Mensagem</label>
-      <textarea id="message" name="message" rows="4" placeholder="Escreva sua mensagem" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
-</main>
+        <script>
+            // Menu toggle mobile
+            const menuToggle = document.getElementById("menu-toggle");
+            const navbar = document.getElementById("navbar");
+            menuToggle.addEventListener("click", () => {
+                navbar.classList.toggle("active");
+            });
 
-<footer>
-  <p>© 2025 Ecomentes Hub Energia Renovável</p>
-  <p>
-    <a href="#">Facebook</a> |
-    <a href="#">Instagram</a> |
-    <a href="#">LinkedIn</a>
-  </p>
-</footer>
+            // Form submission feedback
+            document
+                .getElementById("contact-form")
+                .addEventListener("submit", function (e) {
+                    e.preventDefault();
+                    alert(
+                        "Obrigado pela sua mensagem! Entraremos em contato em breve.",
+                    );
+                    this.reset();
+                });
 
-<script>
-  // Menu toggle mobile
-  const menuToggle = document.getElementById('menu-toggle');
-  const navbar = document.getElementById('navbar');
-  menuToggle.addEventListener('click', () => {
-    navbar.classList.toggle('active');
-  });
+            // Calculadora de economia
+            function calcularEconomia() {
+                const consumo = parseFloat(
+                    document.getElementById("consumo").value,
+                );
+                const tarifa = parseFloat(
+                    document.getElementById("tarifa").value,
+                );
+                const percent = parseFloat(
+                    document.getElementById("percent").value,
+                );
+                if (
+                    isNaN(consumo) ||
+                    consumo < 0 ||
+                    isNaN(tarifa) ||
+                    tarifa < 0 ||
+                    isNaN(percent) ||
+                    percent < 0 ||
+                    percent > 100
+                ) {
+                    alert("Por favor, insira valores válidos.");
+                    return;
+                }
+                const economia = consumo * tarifa * (percent / 100);
+                const resultado = document.getElementById("calc-result");
+                resultado.textContent =
+                    "Você pode economizar cerca de R$ ${economia.toFixed(2)} por mês";
+            }
 
-  // Form submission feedback
-  document.getElementById('contact-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    alert("Obrigado pela sua mensagem! Entraremos em contato em breve.");
-    this.reset();
-  });
+            // Quiz educativo
+            const quizData = [
+                {
+                    question: "Qual destas é uma fonte de energia renovável?",
+                    options: ["Carvão", "Solar", "Petróleo", "Turfa"],
+                    answer: "Solar",
+                },
+                {
+                    question: "Qual o principal benefício da energia eólica?",
+                    options: [
+                        "Emissão de carbono reduzida",
+                        "Poluição do ar",
+                        "Uso intenso de água",
+                        "Escassez de vento",
+                    ],
+                    answer: "Emissão de carbono reduzida",
+                },
+                {
+                    question:
+                        "Qual equipamento converte luz solar em eletricidade?",
+                    options: [
+                        "Painel Solar",
+                        "Gerador a diesel",
+                        "Turbina a gás",
+                        "Bateria",
+                    ],
+                    answer: "Painel Solar",
+                },
+            ];
 
-  // Calculadora de economia
-  function calcularEconomia() {
-    const consumo = parseFloat(document.getElementById('consumo').value);
-    const tarifa = parseFloat(document.getElementById('tarifa').value);
-    const percent = parseFloat(document.getElementById('percent').value);
-    if (
-      isNaN(consumo) || consumo < 0 ||
-      isNaN(tarifa) || tarifa < 0 ||
-      isNaN(percent) || percent < 0 || percent > 100
-    ) {
-      alert('Por favor, insira valores válidos.');
-      return;
-    }
-    const economia = consumo * tarifa * (percent / 100);
-    const resultado = document.getElementById('calc-result');
-    resultado.textContent = ('Você pode economizar cerca de R$ ${economia.toFixed(2)} por mês');
-  }
+            let currentQuestion = 0;
 
-  // Quiz educativo
-  const quizData = [
-    {
-      question: "Qual destas é uma fonte de energia renovável?",
-      options: ["Carvão", "Solar", "Petróleo", "Turfa"],
-      answer: "Solar"
-    },
-    {
-      question: "Qual o principal benefício da energia eólica?",
-      options: ["Emissão de carbono reduzida", "Poluição do ar", "Uso intenso de água", "Escassez de vento"],
-      answer: "Emissão de carbono reduzida"
-    },
-    {
-      question: "Qual equipamento converte luz solar em eletricidade?",
-      options: ["Painel Solar", "Gerador a diesel", "Turbina a gás", "Bateria"],
-      answer: "Painel Solar"
-    }
-  ];
+            const questionText = document.getElementById("question-text");
+            const quizOptions = document.getElementById("quiz-options");
+            const quizCheckBtn = document.getElementById("quiz-check");
+            const quizResult = document.getElementById("quiz-result");
 
-  let currentQuestion = 0;
+            function loadQuestion() {
+                quizResult.textContent = "";
+                questionText.textContent = quizData[currentQuestion].question;
+                quizOptions.innerHTML = "";
 
-  const questionText = document.getElementById('question-text');
-  const quizOptions = document.getElementById('quiz-options');
-  const quizCheckBtn = document.getElementById('quiz-check');
-  const quizResult = document.getElementById('quiz-result');
+                quizData[currentQuestion].options.forEach((option) => {
+                    const id = "option-" + option;
+                    const label = document.createElement("label");
 
-  function loadQuestion() {
-    quizResult.textContent = "";
-    questionText.textContent = quizData[currentQuestion].question;
-    quizOptions.innerHTML = '';
-    
-    quizData[currentQuestion].options.forEach(option => {
-        const id = 'option-' + option;
-        const label = document.createElement('label');
-        
-        // CORREÇÃO: colocar o HTML do input como string
-        label.innerHTML = `
+                    // CORREÇÃO: colocar o HTML do input como string
+                    label.innerHTML = `
             <input type="radio" name="quiz" value="${option}" id="${id}">
             ${option}
         `;
-        
-        quizOptions.appendChild(label);
-    });
-}
 
-  quizCheckBtn.addEventListener('click', () => {
-    const selected = document.querySelector('input[name="quiz"]:checked');
-    if (!selected) {
-        alert('Por favor, escolha uma opção.');
-        return;
-    }
+                    quizOptions.appendChild(label);
+                });
+            }
 
-    if (quizCheckBtn.textContent === "Próxima") {
-        currentQuestion++;
-        if (currentQuestion === quizData.length) {
-            currentQuestion = 0;
-            quizCheckBtn.textContent = "Responder";
-            quizResult.textContent = "";
+            quizCheckBtn.addEventListener("click", () => {
+                const selected = document.querySelector(
+                    'input[name="quiz"]:checked',
+                );
+                if (!selected) {
+                    alert("Por favor, escolha uma opção.");
+                    return;
+                }
+
+                if (quizCheckBtn.textContent === "Próxima") {
+                    currentQuestion++;
+                    if (currentQuestion === quizData.length) {
+                        currentQuestion = 0;
+                        quizCheckBtn.textContent = "Responder";
+                        quizResult.textContent = "";
+                        loadQuestion();
+                        return;
+                    }
+                    loadQuestion();
+                    quizResult.textContent = "";
+                    quizCheckBtn.textContent = "Responder";
+                    return;
+                }
+
+                if (selected.value === quizData[currentQuestion].answer) {
+                    quizResult.textContent = "Resposta correta! 🎉";
+                    quizResult.style.color = "#388e3c";
+                } else {
+                    // ✅ CORREÇÃO: usando template string corretamente
+                    quizResult.textContent = `Errado. A resposta correta é: ${quizData[currentQuestion].answer}`;
+                    quizResult.style.color = "#c62828";
+                }
+
+                quizCheckBtn.textContent = "Próxima";
+            });
             loadQuestion();
-            return;
-        }
-        loadQuestion();
-        quizResult.textContent = "";
-        quizCheckBtn.textContent = "Responder";
-        return;
-    }
 
-    if (selected.value === quizData[currentQuestion].answer) {
-        quizResult.textContent = "Resposta correta! 🎉";
-        quizResult.style.color = "#388e3c";
-    } else {
-        // ✅ CORREÇÃO: usando template string corretamente
-        quizResult.textContent = `Errado. A resposta correta é: ${quizData[currentQuestion].answer}`;
-        quizResult.style.color = "#c62828";
-    }
+            // Depoimentos interativos
+            const testimonials = document.querySelectorAll(".testimonial-item");
+            testimonials.forEach((item) => {
+                item.addEventListener("click", () => {
+                    const active = document.querySelector(
+                        ".testimonial-item.active",
+                    );
+                    if (active && active !== item) {
+                        active.classList.remove("active");
+                        active.querySelector(
+                            ".testimonial-content",
+                        ).style.display = "none";
+                    }
+                    const content = item.querySelector(".testimonial-content");
+                    if (item.classList.contains("active")) {
+                        content.style.display = "none";
+                        item.classList.remove("active");
+                    } else {
+                        content.style.display = "block";
+                        item.classList.add("active");
+                    }
+                });
+            });
 
-    quizCheckBtn.textContent = "Próxima";
-});
-  loadQuestion();
+            // Gamify slider impacto ambiental
+            const consumoRange = document.getElementById("consumo-range");
+            const consumoDisplay = document.getElementById("consumoDisplay");
+            const impactScore = document.getElementById("impactScore");
 
-  // Depoimentos interativos
-  const testimonials = document.querySelectorAll('.testimonial-item');
-  testimonials.forEach(item => {
-    item.addEventListener('click', () => {
-      const active = document.querySelector('.testimonial-item.active');
-      if (active && active !== item) {
-        active.classList.remove('active');
-        active.querySelector('.testimonial-content').style.display = 'none';
-      }
-      const content = item.querySelector('.testimonial-content');
-      if (item.classList.contains('active')) {
-        content.style.display = 'none';
-        item.classList.remove('active');
-      } else {
-        content.style.display = 'block';
-        item.classList.add('active');
-      }
-    });
-  });
+            function updateImpact() {
+                const val = parseInt(consumoRange.value, 10);
+                consumoDisplay.textContent = val;
+                let texto;
+                if (val < 200) {
+                    texto = "Impacto estimado: Baixo";
+                    impactScore.style.color = "#2e7d32";
+                } else if (val < 600) {
+                    texto = "Impacto estimado: Médio";
+                    impactScore.style.color = "#f9a825";
+                } else {
+                    texto = "Impacto estimado: Alto";
+                    impactScore.style.color = "#c62828";
+                }
+                impactScore.textContent = texto;
+            }
 
-  // Gamify slider impacto ambiental
-  const consumoRange = document.getElementById('consumo-range');
-  const consumoDisplay = document.getElementById('consumoDisplay');
-  const impactScore = document.getElementById('impactScore');
-
-  function updateImpact() {
-    const val = parseInt(consumoRange.value, 10);
-    consumoDisplay.textContent = val;
-    let texto;
-    if (val < 200) {
-      texto = "Impacto estimado: Baixo";
-      impactScore.style.color = "#2e7d32";
-    } else if (val < 600) {
-      texto = "Impacto estimado: Médio";
-      impactScore.style.color = "#f9a825";
-    } else {
-      texto = "Impacto estimado: Alto";
-      impactScore.style.color = "#c62828";
-    }
-    impactScore.textContent = texto;
-  }
-
-  consumoRange.addEventListener('input', updateImpact);
-  updateImpact();
-</script>
-  <script src="site.js" defer></script>
-</body>
+            consumoRange.addEventListener("input", updateImpact);
+            updateImpact();
+        </script>
+        <script src="site.js" defer></script>
+    </body>
 </html>
